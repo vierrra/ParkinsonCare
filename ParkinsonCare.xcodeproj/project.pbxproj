@@ -15,7 +15,7 @@
 		884401C0270F10810058E61A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884401BE270F10810058E61A /* LaunchScreen.storyboard */; };
 		884401CC270F64C70058E61A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401CB270F64C70058E61A /* Alert.swift */; };
 		884401D1270F7D870058E61A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401D0270F7D870058E61A /* MainViewController.swift */; };
-		884401D6270F82DD0058E61A /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401D5270F82DC0058E61A /* CreateAccountViewController.swift */; };
+		884401D6270F82DD0058E61A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401D5270F82DC0058E61A /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		884401C1270F10810058E61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		884401CB270F64C70058E61A /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		884401D0270F7D870058E61A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		884401D5270F82DC0058E61A /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		884401D5270F82DC0058E61A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				884401C7270F111C0058E61A /* Login */,
-				884401D2270F82790058E61A /* Create Account */,
+				884401D2270F82790058E61A /* Welcome */,
 				884401CD270F7CBF0058E61A /* Main */,
 				884401CA270F64910058E61A /* Models */,
 				884401B3270F107F0058E61A /* AppDelegate.swift */,
@@ -116,19 +116,18 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		884401D2270F82790058E61A /* Create Account */ = {
+		884401D2270F82790058E61A /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
 				884401D4270F82B80058E61A /* Controller */,
 				884401D3270F82AB0058E61A /* View */,
 			);
-			path = "Create Account";
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		884401D3270F82AB0058E61A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				884401D5270F82DC0058E61A /* CreateAccountViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +135,7 @@
 		884401D4270F82B80058E61A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				884401D5270F82DC0058E61A /* WelcomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				884401D6270F82DD0058E61A /* CreateAccountViewController.swift in Sources */,
+				884401D6270F82DD0058E61A /* WelcomeViewController.swift in Sources */,
 				884401B8270F107F0058E61A /* LoginViewController.swift in Sources */,
 				884401B4270F107F0058E61A /* AppDelegate.swift in Sources */,
 				884401CC270F64C70058E61A /* Alert.swift in Sources */,

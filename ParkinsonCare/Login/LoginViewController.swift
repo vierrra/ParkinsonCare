@@ -18,21 +18,26 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .systemBlue
+    
+        self.view.backgroundColor = .systemBlue
         
         self.configureLayoutLoginCreateAccountButton()
         self.setSecurityAndEntryOfFields()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     @IBAction func loginActionButton(_ sender: Any) {
+
         self.login()
-        
-        self.performSegue(withIdentifier: "loginSegue", sender: nil)
     }
     
     @IBAction func createAccountActionButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "createAccountSegue", sender: nil)
+        let identifier = "welcomeParkinsonCare"
+        
+        self.navigationController(identifier)
     }
     
     @IBAction func recoveryPasswordActionButton(_ sender: Any) {
@@ -52,7 +57,9 @@ class LoginViewController: UIViewController {
         guard let email = emailTextField.text, let password = passwordTextField.text else {return}
         
         if (email == currenceEmail && password == currencePassword) {
-            print("logado")
+            let identifier = "mainParkinsonCare"
+            
+            self.navigationController(identifier)
         } else {
             Alert(controller: self).showAlert(title: "Aviso", message: "Dados nao confere")
         }
@@ -61,6 +68,13 @@ class LoginViewController: UIViewController {
     private func setSecurityAndEntryOfFields() {
         emailTextField.keyboardType         = .emailAddress
         passwordTextField.isSecureTextEntry = true
+    }
+    
+    private func navigationController(_ identifier: String) {
+        let storyBoard     = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyBoard.instantiateViewController(identifier: identifier)
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
