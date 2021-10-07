@@ -120,7 +120,7 @@
                         <outlet property="createAccountdButton" destination="yBF-Ds-nLF" id="4Nh-u6-WXm"/>
                         <outlet property="emailTextField" destination="xnR-gf-Vs3" id="6bo-BR-Rdk"/>
                         <outlet property="loginButton" destination="LDr-lF-4oX" id="JNT-j8-JRq"/>
-                        <outlet property="passwordTextfield" destination="j2P-2e-idB" id="QXC-76-hel"/>
+                        <outlet property="passwordTextField" destination="j2P-2e-idB" id="QXC-76-hel"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

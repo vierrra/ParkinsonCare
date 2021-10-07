@@ -9,9 +9,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField:       UITextField!
-    @IBOutlet weak var passwordTextfield:    UITextField!
+    @IBOutlet weak var passwordTextField:    UITextField!
     @IBOutlet weak var loginButton:          UIButton!
     @IBOutlet weak var createAccountdButton: UIButton!
+    
+    var currenceEmail    = "vierrra@hotmail.com"
+    var currencePassword = "123456"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +22,11 @@ class LoginViewController: UIViewController {
         view.backgroundColor = .systemBlue
         
         self.configureLayoutLoginCreateAccountButton()
+        self.setSecurityAndEntryOfFields()
     }
     
     @IBAction func loginActionButton(_ sender: Any) {
-        print("login ok")
+        self.login()
     }
     
     @IBAction func createAccountActionButton(_ sender: Any) {
@@ -40,6 +44,21 @@ class LoginViewController: UIViewController {
         createAccountdButton.layer.cornerRadius = 5
         createAccountdButton.layer.borderColor  = UIColor.white.cgColor
         createAccountdButton.layer.borderWidth  = 1
+    }
+    
+    private func login() {
+        guard let email = emailTextField.text, let password = passwordTextField.text else {return}
+        
+        if (email == currenceEmail && password == currencePassword) {
+            print("logado")
+        } else {
+            print("nao autenticado")
+        }
+    }
+    
+    private func setSecurityAndEntryOfFields() {
+        emailTextField.keyboardType         = .emailAddress
+        passwordTextField.isSecureTextEntry = true
     }
 }
 
