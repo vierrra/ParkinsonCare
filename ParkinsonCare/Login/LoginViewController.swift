@@ -27,10 +27,12 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginActionButton(_ sender: Any) {
         self.login()
+        
+        self.performSegue(withIdentifier: "loginSegue", sender: nil)
     }
     
     @IBAction func createAccountActionButton(_ sender: Any) {
-        print("registro ok")
+        self.performSegue(withIdentifier: "createAccountSegue", sender: nil)
     }
     
     @IBAction func recoveryPasswordActionButton(_ sender: Any) {
@@ -52,7 +54,7 @@ class LoginViewController: UIViewController {
         if (email == currenceEmail && password == currencePassword) {
             print("logado")
         } else {
-            print("nao autenticado")
+            Alert(controller: self).showAlert(title: "Aviso", message: "Dados nao confere")
         }
     }
     
