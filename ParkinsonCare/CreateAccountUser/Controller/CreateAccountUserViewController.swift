@@ -24,7 +24,7 @@ class CreateAccountUserViewController: UIViewController {
     }
     
     @IBAction func confirmCreateAccountActionButton(_ sender: Any) {
-        
+        self.createAccountUser()
     }
     
     private func configureNavigationBar() {
@@ -34,5 +34,26 @@ class CreateAccountUserViewController: UIViewController {
     
     private func configureLayoutConfirmCreateAccountButton() {
         confirmCreateAccountButton.layer.cornerRadius = 5
+    }
+    
+    private func createAccountUser() {
+        guard let email           = emailCreateAccountTextField.text,
+              let password        = passwordCreateAccountTextField.text,
+              let confirmPassword = confirmPasswordCreateAccountTextField.text,
+              let name            = nameCreateAccountTextField.text,
+              let lastName        = lastNameCreateAccountTextField.text else { return }
+        
+        if (email == "" && password == "" && confirmPassword == "" && name == "" && lastName == "") {
+            
+            Alert(controller: self).showAlert(title: "Aviso", message: "Preencha todos os campos")
+        } else {
+            let identifier = "mainView"
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(identifier: identifier)
+            
+            viewController.modalPresentationStyle = .fullScreen
+            
+            self.present(viewController, animated: true, completion: nil)
+        }
     }
 }
