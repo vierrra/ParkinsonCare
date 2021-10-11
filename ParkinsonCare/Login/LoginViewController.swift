@@ -20,7 +20,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
     
         self.view.backgroundColor = .systemBlue
-        
         self.configureLayoutLoginCreateAccountButton()
         self.setSecurityAndEntryOfFields()
     }
@@ -35,15 +34,22 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func createAccountActionButton(_ sender: Any) {
-        let identifier     = "welcomeParkinsonCare"
-        let storyBoard     = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyBoard.instantiateViewController(identifier: identifier)
+        let identifier = "welcomeParkinsonCare"
         
-        self.navigationController?.pushViewController(viewController, animated: true)
+        self.navigationController(identifier)
+        
     }
     
     @IBAction func recoveryPasswordActionButton(_ sender: Any) {
         print("recuperar senha ok")
+    }
+    
+    private func configureBackgroundView() {
+        let layer = CAGradientLayer()
+        
+        layer.frame  = view.frame
+        layer.colors = [UIColor.systemBlue.cgColor, UIColor.black.cgColor]
+        view.layer.addSublayer(layer)
     }
     
     private func configureLayoutLoginCreateAccountButton() {
@@ -73,7 +79,10 @@ class LoginViewController: UIViewController {
     }
     
     private func navigationController(_ identifier: String) {
+        let storyBoard     = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyBoard.instantiateViewController(identifier: identifier)
         
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
