@@ -35,9 +35,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func createAccountActionButton(_ sender: Any) {
-        let identifier = "welcomeParkinsonCare"
+        let identifier     = "welcomeParkinsonCare"
+        let storyBoard     = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyBoard.instantiateViewController(identifier: identifier)
         
-        self.navigationController(identifier)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func recoveryPasswordActionButton(_ sender: Any) {
@@ -71,10 +73,7 @@ class LoginViewController: UIViewController {
     }
     
     private func navigationController(_ identifier: String) {
-        let storyBoard     = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyBoard.instantiateViewController(identifier: identifier)
         
-        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

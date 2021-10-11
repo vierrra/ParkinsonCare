@@ -16,6 +16,8 @@
 		884401CC270F64C70058E61A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401CB270F64C70058E61A /* Alert.swift */; };
 		884401D1270F7D870058E61A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401D0270F7D870058E61A /* MainViewController.swift */; };
 		884401D6270F82DD0058E61A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401D5270F82DC0058E61A /* WelcomeViewController.swift */; };
+		88783AFA271481190070D420 /* CreateAccountUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88783AF9271481190070D420 /* CreateAccountUserViewController.swift */; };
+		88783AFD271482710070D420 /* NavigationBetweenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88783AFC271482710070D420 /* NavigationBetweenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		884401CB270F64C70058E61A /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		884401D0270F7D870058E61A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		884401D5270F82DC0058E61A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		88783AF9271481190070D420 /* CreateAccountUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountUserViewController.swift; sourceTree = "<group>"; };
+		88783AFC271482710070D420 /* NavigationBetweenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBetweenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +66,12 @@
 		884401B2270F107F0058E61A /* ParkinsonCare */ = {
 			isa = PBXGroup;
 			children = (
+				88783AF6271480D90070D420 /* CreateAccountUser */,
 				884401C7270F111C0058E61A /* Login */,
 				884401D2270F82790058E61A /* Welcome */,
 				884401CD270F7CBF0058E61A /* Main */,
 				884401CA270F64910058E61A /* Models */,
+				88783AFB271481E30070D420 /* Utils */,
 				884401B3270F107F0058E61A /* AppDelegate.swift */,
 				884401B5270F107F0058E61A /* SceneDelegate.swift */,
 				884401B9270F107F0058E61A /* Main.storyboard */,
@@ -140,6 +146,38 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		88783AF6271480D90070D420 /* CreateAccountUser */ = {
+			isa = PBXGroup;
+			children = (
+				88783AF8271481000070D420 /* Controller */,
+				88783AF7271480F80070D420 /* View */,
+			);
+			path = CreateAccountUser;
+			sourceTree = "<group>";
+		};
+		88783AF7271480F80070D420 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88783AF8271481000070D420 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				88783AF9271481190070D420 /* CreateAccountUserViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		88783AFB271481E30070D420 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				88783AFC271482710070D420 /* NavigationBetweenViewController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,6 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88783AFA271481190070D420 /* CreateAccountUserViewController.swift in Sources */,
+				88783AFD271482710070D420 /* NavigationBetweenViewController.swift in Sources */,
 				884401D6270F82DD0058E61A /* WelcomeViewController.swift in Sources */,
 				884401B8270F107F0058E61A /* LoginViewController.swift in Sources */,
 				884401B4270F107F0058E61A /* AppDelegate.swift in Sources */,

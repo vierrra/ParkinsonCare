@@ -172,13 +172,77 @@
                     <view key="view" contentMode="scaleToFill" id="kBm-UZ-5PJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOA-Xh-c3n">
+                                <rect key="frame" x="80" y="100" width="215" height="65"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="5wA-ba-WSR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPF-qB-cTB">
+                                <rect key="frame" x="80" y="195" width="215" height="201"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="201" id="rnT-mi-9h6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdV-2F-mRe">
+                                <rect key="frame" x="80" y="436" width="215" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="nva-A6-iVy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="getStartedActionButton:" destination="8vw-Bb-b48" eventType="touchUpInside" id="D6S-By-hvV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SYq-BU-vSy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="kOA-Xh-c3n" firstAttribute="leading" secondItem="SYq-BU-vSy" secondAttribute="leading" constant="80" id="4Wk-Gc-PMH"/>
+                            <constraint firstItem="lPF-qB-cTB" firstAttribute="top" secondItem="kOA-Xh-c3n" secondAttribute="bottom" constant="30" id="7ek-at-a1O"/>
+                            <constraint firstItem="qdV-2F-mRe" firstAttribute="top" secondItem="lPF-qB-cTB" secondAttribute="bottom" constant="40" id="9Ey-YH-fIk"/>
+                            <constraint firstItem="lPF-qB-cTB" firstAttribute="leading" secondItem="SYq-BU-vSy" secondAttribute="leading" constant="80" id="DYa-F6-xCP"/>
+                            <constraint firstItem="kOA-Xh-c3n" firstAttribute="top" secondItem="SYq-BU-vSy" secondAttribute="top" constant="100" id="Fcc-7W-S6y"/>
+                            <constraint firstItem="qdV-2F-mRe" firstAttribute="leading" secondItem="SYq-BU-vSy" secondAttribute="leading" constant="80" id="Qhe-8O-Hgt"/>
+                            <constraint firstItem="SYq-BU-vSy" firstAttribute="trailing" secondItem="lPF-qB-cTB" secondAttribute="trailing" constant="80" id="YQM-GV-qeu"/>
+                            <constraint firstItem="SYq-BU-vSy" firstAttribute="trailing" secondItem="kOA-Xh-c3n" secondAttribute="trailing" constant="80" id="qkh-cA-z6f"/>
+                            <constraint firstItem="SYq-BU-vSy" firstAttribute="trailing" secondItem="qdV-2F-mRe" secondAttribute="trailing" constant="80" id="xE0-qW-rYB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="qdV-2F-mRe" id="pFn-Ht-RNx"/>
+                        <outlet property="welcomeLabel" destination="kOA-Xh-c3n" id="WGJ-6n-nFE"/>
+                        <outlet property="welcomeMessageLabel" destination="lPF-qB-cTB" id="eIS-Kt-bG4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZeI-98-9hB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590" y="426"/>
+            <point key="canvasLocation" x="589.60000000000002" y="425.93703148425789"/>
+        </scene>
+        <!--Create Account User View Controller-->
+        <scene sceneID="ln4-RN-8cO">
+            <objects>
+                <viewController storyboardIdentifier="createAccountUser" id="Djh-kd-aVl" customClass="CreateAccountUserViewController" customModule="ParkinsonCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="10s-En-al0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ugU-O8-ecD"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bgg-PB-wRA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="441"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -188,6 +252,12 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
