@@ -52,7 +52,7 @@ class CreateAccountUserViewController: UIViewController {
     }
     
     private func configureCreateAccountSuccess() {
-        let alert = UIAlertController(title: "Aviso", message: "Cadastro efetivado com sucesso!", preferredStyle: .alert)
+        let alert    = UIAlertController(title: "Aviso", message: "Cadastro efetivado com sucesso!", preferredStyle: .alert)
         let okButton = UIAlertAction(title: "Ok", style: .default, handler: { (_) in
             
             if let navigationControler = self.navigationController {

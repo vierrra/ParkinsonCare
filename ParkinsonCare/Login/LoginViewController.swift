@@ -28,6 +28,23 @@ class LoginViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
+    private func configureLayoutLoginCreateAccountButton() {
+        loginButton.layer.cornerRadius          = 5
+        loginButton.layer.borderColor           = UIColor.white.cgColor
+        loginButton.layer.borderWidth           = 1
+        createAccountdButton.layer.cornerRadius = 5
+        createAccountdButton.layer.borderColor  = UIColor.white.cgColor
+        createAccountdButton.layer.borderWidth  = 1
+    }
+    
+    private func configureBackgroundView() {
+        let layer = CAGradientLayer()
+        
+        layer.frame  = view.frame
+        layer.colors = [UIColor.systemBlue.cgColor, UIColor.black.cgColor]
+        view.layer.addSublayer(layer)
+    }
+    
     @IBAction func loginActionButton(_ sender: Any) {
 
         self.login()
@@ -44,28 +61,11 @@ class LoginViewController: UIViewController {
         print("recuperar senha ok")
     }
     
-    private func configureBackgroundView() {
-        let layer = CAGradientLayer()
-        
-        layer.frame  = view.frame
-        layer.colors = [UIColor.systemBlue.cgColor, UIColor.black.cgColor]
-        view.layer.addSublayer(layer)
-    }
-    
-    private func configureLayoutLoginCreateAccountButton() {
-        loginButton.layer.cornerRadius          = 5
-        loginButton.layer.borderColor           = UIColor.white.cgColor
-        loginButton.layer.borderWidth           = 1
-        createAccountdButton.layer.cornerRadius = 5
-        createAccountdButton.layer.borderColor  = UIColor.white.cgColor
-        createAccountdButton.layer.borderWidth  = 1
-    }
-    
     private func login() {
         guard let email = emailTextField.text, let password = passwordTextField.text else {return}
         
         if (email == currenceEmail && password == currencePassword) {
-            let identifier = "mainParkinsonCare"
+            let identifier = "MainView"
             
             self.navigationController(identifier)
         } else {
