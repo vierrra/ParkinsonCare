@@ -47,13 +47,21 @@ class CreateAccountUserViewController: UIViewController {
             
             Alert(controller: self).showAlert(title: "Aviso", message: "Preencha todos os campos")
         } else {
-            let identifier = "mainView"
-            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyBoard.instantiateViewController(identifier: identifier)
-            
-            viewController.modalPresentationStyle = .fullScreen
-            
-            self.present(viewController, animated: true, completion: nil)
+            self.configureCreateAccountSuccess()
         }
+    }
+    
+    private func configureCreateAccountSuccess() {
+        let alert = UIAlertController(title: "Aviso", message: "Cadastro efetivado com sucesso!", preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default, handler: { (_) in
+            
+            if let navigationControler = self.navigationController {
+                navigationControler.popToRootViewController(animated: true)
+            }
+        })
+        
+        alert.addAction(okButton)
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }

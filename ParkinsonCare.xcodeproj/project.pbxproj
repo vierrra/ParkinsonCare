@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54461980657F8F8AE53F3D3A /* Pods_ParkinsonCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98488735D512D4199F4DABF6 /* Pods_ParkinsonCare.framework */; };
 		884401B4270F107F0058E61A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401B3270F107F0058E61A /* AppDelegate.swift */; };
 		884401B6270F107F0058E61A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401B5270F107F0058E61A /* SceneDelegate.swift */; };
 		884401B8270F107F0058E61A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401B7270F107F0058E61A /* LoginViewController.swift */; };
@@ -16,11 +17,14 @@
 		884401CC270F64C70058E61A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401CB270F64C70058E61A /* Alert.swift */; };
 		884401D1270F7D870058E61A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401D0270F7D870058E61A /* MainViewController.swift */; };
 		884401D6270F82DD0058E61A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884401D5270F82DC0058E61A /* WelcomeViewController.swift */; };
+		88472669271726CD00F94D35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88472668271726CD00F94D35 /* GoogleService-Info.plist */; };
 		88783AFA271481190070D420 /* CreateAccountUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88783AF9271481190070D420 /* CreateAccountUserViewController.swift */; };
 		88783AFD271482710070D420 /* NavigationBetweenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88783AFC271482710070D420 /* NavigationBetweenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55781018BF639896B132117A /* Pods-ParkinsonCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkinsonCare.debug.xcconfig"; path = "Target Support Files/Pods-ParkinsonCare/Pods-ParkinsonCare.debug.xcconfig"; sourceTree = "<group>"; };
+		5FF7F68B209647B66536CB15 /* Pods-ParkinsonCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkinsonCare.release.xcconfig"; path = "Target Support Files/Pods-ParkinsonCare/Pods-ParkinsonCare.release.xcconfig"; sourceTree = "<group>"; };
 		884401B0270F107F0058E61A /* ParkinsonCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkinsonCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884401B3270F107F0058E61A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		884401B5270F107F0058E61A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,8 +36,10 @@
 		884401CB270F64C70058E61A /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		884401D0270F7D870058E61A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		884401D5270F82DC0058E61A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		88472668271726CD00F94D35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		88783AF9271481190070D420 /* CreateAccountUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountUserViewController.swift; sourceTree = "<group>"; };
 		88783AFC271482710070D420 /* NavigationBetweenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBetweenViewController.swift; sourceTree = "<group>"; };
+		98488735D512D4199F4DABF6 /* Pods_ParkinsonCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkinsonCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54461980657F8F8AE53F3D3A /* Pods_ParkinsonCare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E8427ACE16D6BC5E8D3CDE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55781018BF639896B132117A /* Pods-ParkinsonCare.debug.xcconfig */,
+				5FF7F68B209647B66536CB15 /* Pods-ParkinsonCare.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		43C0F1887DB4CD79CCD87091 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98488735D512D4199F4DABF6 /* Pods_ParkinsonCare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		884401A7270F107F0058E61A = {
 			isa = PBXGroup;
 			children = (
 				884401B2270F107F0058E61A /* ParkinsonCare */,
 				884401B1270F107F0058E61A /* Products */,
+				2E8427ACE16D6BC5E8D3CDE5 /* Pods */,
+				43C0F1887DB4CD79CCD87091 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +105,7 @@
 				884401BC270F10810058E61A /* Assets.xcassets */,
 				884401BE270F10810058E61A /* LaunchScreen.storyboard */,
 				884401C1270F10810058E61A /* Info.plist */,
+				88472668271726CD00F94D35 /* GoogleService-Info.plist */,
 			);
 			path = ParkinsonCare;
 			sourceTree = "<group>";
@@ -185,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 884401C4270F10810058E61A /* Build configuration list for PBXNativeTarget "ParkinsonCare" */;
 			buildPhases = (
+				69589A41617D1F2A97E019FA /* [CP] Check Pods Manifest.lock */,
 				884401AC270F107F0058E61A /* Sources */,
 				884401AD270F107F0058E61A /* Frameworks */,
 				884401AE270F107F0058E61A /* Resources */,
+				973845BC177ED73499886A54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,12 +266,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				884401C0270F10810058E61A /* LaunchScreen.storyboard in Resources */,
+				88472669271726CD00F94D35 /* GoogleService-Info.plist in Resources */,
 				884401BD270F10810058E61A /* Assets.xcassets in Resources */,
 				884401BB270F107F0058E61A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69589A41617D1F2A97E019FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParkinsonCare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		973845BC177ED73499886A54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParkinsonCare/Pods-ParkinsonCare-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParkinsonCare/Pods-ParkinsonCare-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParkinsonCare/Pods-ParkinsonCare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		884401AC270F107F0058E61A /* Sources */ = {
@@ -399,6 +472,7 @@
 		};
 		884401C5270F10810058E61A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55781018BF639896B132117A /* Pods-ParkinsonCare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -418,6 +492,7 @@
 		};
 		884401C6270F10810058E61A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FF7F68B209647B66536CB15 /* Pods-ParkinsonCare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
